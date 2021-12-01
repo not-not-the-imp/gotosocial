@@ -130,7 +130,7 @@ To do this, first build the gotosocial binary with `./scripts/build.sh`.
 Then, launch the testrig by invoking the binary as follows:
 
 ```bash
-GTS_DB_TYPE="sqlite" GTS_DB_ADDRESS=":memory:" ./gotosocial --host localhost:8080 testrig start
+GTS_HOST="localhost" GTS_DB_TYPE="sqlite" GTS_DB_ADDRESS=":memory:" ./gotosocial --host localhost:8080 testrig start
 ```
 
 To run Pinafore locally in dev mode, first clone the [Pinafore](https://github.com/nolanlawson/pinafore) repository, and then run the following command in the cloned directory:
